@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <button class="navbar_logo" type="button" ng-click="vm.scrollTo('about')">
+        Portfolio
+    </button>
+
+    <a
+        ng-repeat="s in vm.sections"
+        href=""
+        class="navbar_link"
+        ng-class="{ 'is-active': vm.activeId === s.id }"
+        ng-click="vm.scrollTo(s.id)">
+        {{ s.label }}
+    </a>
+</nav>

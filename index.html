@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="frontpage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="src/assets/css/style.css">
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script type="module" src="src/app.js"></script>
+</head>
+
+<body>
+    <app-navbar></app-navbar>
+
+    <main class="container">
+        <section id="about">
+            <about-section></about-section>
+        </section>
+
+        <section id="cv">
+            <cv-section></cv-section>
+        </section>
+        
+        <section id="projects">
+            <projects-section></projects-section>
+        </section>
+
+        <section id="contact">
+            <contact-section></contact-section>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        {{ $root.now | date:'yyyy' }} - YANG Jason's Portfolio
+    </footer>
+</body>
+</html>
